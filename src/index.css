@@ -63,7 +63,8 @@ body {
   color: var(--ink);
   line-height: 0.85;
   letter-spacing: -0.015em;
-  font-size: calc(13.5vw - 3.5vw * var(--p));
+  /* big in the hero, then shrinks well down so the map owns the corners */
+  font-size: calc(13.5vw - 7.2vw * var(--p));
   transition: opacity 0.45s ease;
 }
 
@@ -175,21 +176,21 @@ body {
   background: rgba(247, 244, 236, 0.82);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  padding: 9px 14px;
-  border-radius: 12px;
+  padding: 7px 11px;
+  border-radius: 10px;
 }
 
 .tagline strong {
   font-family: var(--serif);
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
   color: var(--ink);
 }
 
 .tagline span {
   color: var(--muted);
-  font-size: 12px;
-  letter-spacing: 0.14em;
+  font-size: 10px;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 }
 
@@ -205,18 +206,18 @@ body {
   background: rgba(247, 244, 236, 0.82);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  padding: 8px 13px;
-  border-radius: 12px;
+  padding: 6px 10px;
+  border-radius: 10px;
 }
 
 .credit span {
   color: var(--muted);
-  font-size: 11.5px;
+  font-size: 10px;
   letter-spacing: 0.05em;
 }
 
 .credit img {
-  height: 22px;
+  height: 16px;
   display: block;
 }
 
@@ -422,59 +423,62 @@ body {
   animation: fadein 0.2s ease;
 }
 
+/* Two-column "banner": art fills the left, content on the right. */
 .modal {
-  width: min(560px, calc(100vw - 48px));
+  width: min(920px, calc(100vw - 40px));
+  max-height: calc(100vh - 40px);
   background: #fffefa;
   border: 1px solid rgba(20, 19, 17, 0.1);
   border-radius: 22px;
-  padding: 34px 36px 28px;
   box-shadow: 0 30px 80px rgba(30, 26, 20, 0.35);
   position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   animation: pop 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-.modal-img {
-  width: 118px;
-  height: 118px;
-  border-radius: 14px;
-  object-fit: cover;
-  border: 2.5px solid var(--accent, #1d6f9c);
-  display: block;
-  margin-bottom: 18px;
-  box-shadow: 0 8px 26px rgba(30, 26, 20, 0.2);
+.modal-art {
+  background-size: cover;
+  background-position: center;
+  background-color: #e9e4d8;
+  min-height: 340px;
+}
+
+.modal-body {
+  padding: 40px 42px 30px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
 }
 
 .modal-eyebrow {
   font-size: 12px;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--accent, #1d6f9c);
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
   line-height: 1.7;
+  padding-right: 34px;
 }
 
 .modal-question {
   font-family: var(--serif);
-  font-size: 24px;
-  line-height: 1.4;
+  font-size: 30px;
+  line-height: 1.32;
   font-weight: 500;
   color: #17150f;
-  margin-bottom: 26px;
-}
-
-.vote-row {
-  display: flex;
-  align-items: center;
-  gap: 14px;
+  margin-bottom: 30px;
 }
 
 .vote-btn {
-  font: 600 14px var(--sans);
+  font: 600 15px var(--sans);
   display: inline-flex;
-  gap: 8px;
+  gap: 10px;
   align-items: center;
-  padding: 10px 18px;
+  align-self: flex-start;
+  padding: 13px 24px;
   border-radius: 999px;
   border: 1.5px solid var(--accent, #1d6f9c);
   background: transparent;
@@ -492,25 +496,71 @@ body {
   color: #fffefa;
 }
 
-.vote-count {
+.modal-source {
+  margin-top: auto;
+  padding-top: 22px;
+  border-top: 1px solid rgba(20, 19, 17, 0.12);
+}
+
+.modal-source-title {
+  font-family: var(--serif);
+  font-size: 15px;
+  font-weight: 600;
+  color: #17150f;
+  margin-bottom: 3px;
+}
+
+.modal-source-meta {
+  font-size: 13px;
   color: var(--muted);
-  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modal-source-meta a {
+  color: var(--muted);
 }
 
 .modal-close {
   position: absolute;
-  top: 14px;
+  top: 16px;
   right: 18px;
-  background: none;
-  border: none;
-  color: var(--muted);
-  font-size: 26px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 254, 250, 0.9);
+  border: 1px solid rgba(20, 19, 17, 0.12);
+  color: var(--ink);
+  font-size: 22px;
   cursor: pointer;
   line-height: 1;
+  z-index: 2;
 }
 
 .modal-close:hover {
-  color: var(--ink);
+  background: #fff;
+}
+
+/* Modal stacks on narrow screens */
+@media (max-width: 720px) {
+  .modal {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    max-height: calc(100vh - 24px);
+    width: calc(100vw - 24px);
+  }
+
+  .modal-art {
+    min-height: 200px;
+    height: 34vh;
+  }
+
+  .modal-body {
+    padding: 26px 24px 24px;
+  }
+
+  .modal-question {
+    font-size: 23px;
+  }
 }
 
 @keyframes fadein {
@@ -524,4 +574,122 @@ body {
     opacity: 0;
     transform: scale(0.94) translateY(10px);
   }
+}
+
+/* ---- Mobile list view ---- */
+.mlist {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+.mlist-hero {
+  padding: 30px 4px 20px;
+  text-align: center;
+}
+
+.mlist-logo {
+  height: 40px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.mlist-title {
+  font-family: var(--serif);
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.mlist-intro {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #47433a;
+}
+
+.mlist-session {
+  margin-top: 30px;
+}
+
+.mlist-session-head {
+  padding: 10px 0 12px;
+  border-bottom: 2px solid var(--accent, #1d6f9c);
+  margin-bottom: 14px;
+}
+
+.mlist-session-no {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent, #1d6f9c);
+}
+
+.mlist-session-title {
+  font-family: var(--serif);
+  font-size: 21px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-top: 3px;
+  line-height: 1.25;
+}
+
+.mcard {
+  display: flex;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(20, 19, 17, 0.08);
+}
+
+.mcard-thumb {
+  flex: none;
+  width: 78px;
+  height: 78px;
+  border-radius: 12px;
+  border: 2px solid var(--accent, #1d6f9c);
+  background-size: cover;
+  background-position: center;
+  background-color: #e9e4d8;
+  cursor: pointer;
+  padding: 0;
+}
+
+.mcard-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.mcard-q {
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.4;
+  color: #17150f;
+  margin-bottom: 12px;
+}
+
+.mcard-actions .vote-btn {
+  padding: 9px 16px;
+  font-size: 13.5px;
+}
+
+.mlist-foot {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(20, 19, 17, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.mlist-foot-logo {
+  height: 20px;
+}
+
+.mlist-foot span {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
 }

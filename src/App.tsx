@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react'
 import Constellation from './components/Constellation'
+import MobileList from './components/MobileList'
 import QuestionModal from './components/QuestionModal'
 import { useVotes } from './hooks/useVotes'
+import { useIsMobile } from './hooks/useIsMobile'
 import { SESSION_COLORS, imageFor } from './data/sessions'
 import type { Question, Session } from './types'
 
@@ -20,6 +22,7 @@ export default function App() {
   const [heroGone, setHeroGone] = useState(false)
   const [zoomed, setZoomed] = useState(false)
   const { counts, voted, toggle } = useVotes()
+  const isMobile = useIsMobile()
 
   useEffect(() => {
     const onScroll = () => {
@@ -39,6 +42,28 @@ export default function App() {
   }, [])
 
   const scrollToMap = () => window.scrollTo({ top: window.innerHeight * SCROLL_RANGE, behavior: 'smooth' })
+
+  const modal = selected && (
+    <QuestionModal
+      question={selected.question}
+      session={selected.session}
+      color={SESSION_COLORS[selected.sessionIndex]}
+      image={imageFor(selected.question.id)}
+      votes={counts[selected.question.id] ?? 0}
+      hasVoted={voted.has(selected.question.id)}
+      onToggle={() => toggle(selected.question.id)}
+      onClose={() => setSelected(null)}
+    />
+  )
+
+  if (isMobile) {
+    return (
+      <>
+        <MobileList counts={counts} voted={voted} onToggle={toggle} onSelect={setSelected} />
+        {modal}
+      </>
+    )
+  }
 
   return (
     <>
@@ -81,18 +106,7 @@ export default function App() {
         </div>
         <div className="hint">Click an image to reveal its question · Zoom with + and − · When zoomed, drag to move</div>
 
-        {selected && (
-          <QuestionModal
-            question={selected.question}
-            session={selected.session}
-            color={SESSION_COLORS[selected.sessionIndex]}
-            image={imageFor(selected.question.id)}
-            votes={counts[selected.question.id] ?? 0}
-            hasVoted={voted.has(selected.question.id)}
-            onToggle={() => toggle(selected.question.id)}
-            onClose={() => setSelected(null)}
-          />
-        )}
+        {modal}
       </div>
     </>
   )

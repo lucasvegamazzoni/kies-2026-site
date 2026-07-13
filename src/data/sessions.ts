@@ -1,6 +1,22 @@
 import raw from './questions.json'
 import imageMapRaw from './imageMap.json'
+import artSourcesRaw from './artSources.json'
 import type { Session } from '../types'
+
+export interface ArtMeta {
+  title: string
+  artist: string
+  tradition: string
+  licence: string
+  source: string
+}
+
+const artSources = artSourcesRaw as Record<string, ArtMeta>
+
+// Look up artwork credit by image filename (keyed on base name, ext-agnostic)
+export function artMetaFor(image: string): ArtMeta | undefined {
+  return artSources[image.replace(/\.[a-z]+$/i, '')]
+}
 
 export const SESSIONS = raw.sessions as Session[]
 

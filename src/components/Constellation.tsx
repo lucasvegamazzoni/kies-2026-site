@@ -13,7 +13,7 @@ const ZOOM_STEP = 1.35
 
 // At overview zoom the map is fitted inside this padding so tiles never sit
 // under the fixed corner chrome (tagline, credit, hint, zoom buttons)
-const PAD = { top: 104, right: 52, bottom: 104, left: 52 }
+const PAD = { top: 64, right: 30, bottom: 72, left: 30 }
 
 interface HubNode extends SimulationNodeDatum {
   kind: 'hub'
