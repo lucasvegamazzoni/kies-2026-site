@@ -1,0 +1,133 @@
+{
+  "sessions": [
+    {
+      "no": 1,
+      "id": "s01",
+      "title": "Keynote: The case for Human flourishing",
+      "questions": [
+        { "id": "s01-q1", "contrarian": false, "text": "What does an AI industrial revolution mean at a societal level? How can our systems best prepare for this transition?" },
+        { "id": "s01-q2", "contrarian": false, "text": "In an age of intelligent machines, which human capabilities become more valuable, not less?" },
+        { "id": "s01-q3", "contrarian": false, "text": "Is climate impact on learning and societies getting overshadowed by the overwhelming wave of AI?" },
+        { "id": "s01-c1", "contrarian": true, "text": "Every tech wave came with the same plea to put humans first. The market mostly ignored it and living standards still rose. Why should this time be any different, and what if the moral framing just does not matter to the outcome?" },
+        { "id": "s01-c2", "contrarian": true, "text": "Foundations poured billions into human-centered education reform and moved the needle a little. Tech companies changed how a billion people learn, for free, chasing profit. Should we just admit the market is the better tool here?" },
+        { "id": "s01-c3", "contrarian": true, "text": "If AI ends up doing most thinking work better than we do, is keeping humans at the center honest, or is it denial? Maybe the real agenda is redistribution and meaning, not more skilling." }
+      ]
+    },
+    {
+      "no": 2,
+      "id": "s02",
+      "title": "Jobs: What changes, stays the same, gets eliminated?",
+      "questions": [
+        { "id": "s02-q1", "contrarian": false, "text": "We keep calling healthcare and hospitality hard to automate. Is that real analysis, or is it wishful thinking? What in these jobs is already getting eaten faster than we admit?" },
+        { "id": "s02-q2", "contrarian": false, "text": "Nurses and hospitality workers from India and the Philippines increasingly end up staffing aging economies abroad. Is that mobility for them, or is it a brain drain we dress up as opportunity?" },
+        { "id": "s02-q3", "contrarian": false, "text": "Care and green work keep getting called the future while staying low-paid and low-status. How do we make this more appealing?" },
+        { "id": "s02-q4", "contrarian": false, "text": "Walk us through a training-to-placement pipeline that genuinely scales in these sectors. Where does it usually break: money, curriculum, employers, or regulation?" },
+        { "id": "s02-c1", "contrarian": true, "text": "Is “hard to automate” just a nice way of saying not worth automating yet? Low wages may be the only moat these jobs have. What happens when a robot costs less than a wage in Manila or Chennai?" },
+        { "id": "s02-c2", "contrarian": true, "text": "Are we romanticizing care work? A lot of it is backbreaking, badly paid, and churns through people." },
+        { "id": "s02-c3", "contrarian": true, "text": "Rich aging countries want Asian care workers but will not pay them citizen wages or give them full rights. Is this care-mobility pipeline real opportunity, or just well-organized labor extraction we keep applauding?" }
+      ]
+    },
+    {
+      "no": 3,
+      "id": "s03",
+      "title": "Is AI enabling or deterring working women?",
+      "questions": [
+        { "id": "s03-q1", "contrarian": false, "text": "Play out the optimistic case. AI makes work flexible, remote, skills-based. What would have to be true for that to genuinely open things up for women?" },
+        { "id": "s03-q2", "contrarian": false, "text": "The industrial era pulled women into work on unequal terms. What did that teach us that we are about to repeat in the AI era if we are not careful?" },
+        { "id": "s03-q3", "contrarian": false, "text": "Now the other side. What if AI automates exactly the roles women are concentrated in, admin, services, entry-level knowledge work? What is the early evidence telling us?" },
+        { "id": "s03-q4", "contrarian": false, "text": "In parts of ASEAN, women work at rates that shame rich countries, yet barely reach the top. What explains the gap between working and leading?" },
+        { "id": "s03-q5", "contrarian": false, "text": "You are a policy maker with one budget line and five years. What do you fund to get women into AI-era leadership, and what do you stop funding tomorrow?" },
+        { "id": "s03-c1", "contrarian": true, "text": "As AI tools make jobs more accessible, from-home, non-technical for everyone, how will that actual change in mechanism speed up/effect the movement of women into productive jobs?" },
+        { "id": "s03-c2", "contrarian": true, "text": "Do women-only programs sometimes backfire, labeling women as a group that needs help rather than talent to compete for? Would plain gender-blind, outcomes-based hiring do more for them than anything targeted?" }
+      ]
+    },
+    {
+      "no": 4,
+      "id": "s04",
+      "title": "How to lead an AI transformation?",
+      "questions": [
+        { "id": "s04-q1", "contrarian": false, "text": "Most corporate AI training is just tool training. Is that reskilling, or box-ticking? What does the deep version actually cost, in money and time?" },
+        { "id": "s04-q2", "contrarian": false, "text": "Reskill the people you have, or hire AI-native graduates. When the budget tightens, which one are leaders in this room actually choosing, and why?" },
+        { "id": "s04-q3", "contrarian": false, "text": "Which roles inside your organizations have you genuinely redesigned around AI, not just bolted it onto? What did change management teach you the hard way?" },
+        { "id": "s04-q4", "contrarian": false, "text": "How do you actually measure whether a workforce or a graduating class is AI-ready? Is there a credible metric?" },
+        { "id": "s04-c1", "contrarian": true, "text": "Is AI readiness mostly a consulting product? The tools change every six months. Maybe the smart move for universities and employers alike is to teach fundamentals and deliberately not chase AI curricula that expire before graduation." },
+        { "id": "s04-c2", "contrarian": true, "text": "Is AI shrinking or widening the gap between an average employee and an excellent one?" }
+      ]
+    },
+    {
+      "no": 5,
+      "id": "s05",
+      "title": "Keynote: The New Talent Equation",
+      "questions": [
+        { "id": "s05-q1", "contrarian": false, "text": "If AI can pass most of our tests, what are those tests actually measuring anymore? What is still worth testing for?" },
+        { "id": "s05-q2", "contrarian": false, "text": "What we measure ends up shaping what we teach. What are today's dominant tests quietly optimizing our schools for?" },
+        { "id": "s05-q3", "contrarian": false, "text": "Which human skills, judgment, communication, adaptability, can we actually measure well at scale? And which are we just pretending to measure?" },
+        { "id": "s05-q4", "contrarian": false, "text": "If assessment becomes continuous and baked into work and learning, does the big high-stakes exam die? And what fills the signaling job it used to do?" },
+        { "id": "s05-c1", "contrarian": true, "text": "If AI can evaluate someone's real work cheaply and continuously, do we need standardized tests at all? Maybe the future of assessment is no test, just watching what people can do." },
+        { "id": "s05-c2", "contrarian": true, "text": "Has high-stakes testing in Asia done more harm than good, warping childhoods, feeding a shadow tutoring economy, rewarding test-taking over ability? If you built ETS for Asia today, would it look anything like the current model?" }
+      ]
+    },
+    {
+      "no": 6,
+      "id": "s06",
+      "title": "Is college still worth it?",
+      "questions": [
+        { "id": "s06-q1", "contrarian": false, "text": "In 2030, what matters more to a graduate, the brand on the degree, the portfolio they can show, or the people they know?" },
+        { "id": "s06-q2", "contrarian": false, "text": "Students are stacking up internships and micro-gigs to start careers. Is that a real shift in how work begins, or just a symptom of a broken entry-level market?" },
+        { "id": "s06-q3", "contrarian": false, "text": "Studying abroad is a huge export for Australia and the UK and a huge bet for Asian families. How does AI change the return on that plane ticket?" },
+        { "id": "s06-c1", "contrarian": true, "text": "Alternative credentials have had fifteen years, MOOCs, bootcamps, micro-degrees, and the degree premium in Asia has barely moved. At what point do we admit the disruption thesis just failed? Is this time different?" },
+        { "id": "s06-c2", "contrarian": true, "text": "How does an elite institution stay relevant when its core products, curated content and a stamp of approval, are both getting cheap fast?" },
+        { "id": "s06-c3", "contrarian": true, "text": "If entry-level jobs are vanishing, is the responsible thing to tell Asian families to skip the pricey degree, or the exact opposite, because in a tighter market the brand filter gets stronger, not weaker?" }
+      ]
+    },
+    {
+      "no": 7,
+      "id": "s07",
+      "title": "Economic Mobility: What role can investors play?",
+      "questions": [
+        { "id": "s07-q1", "contrarian": false, "text": "What makes an outcome fundable? What can you measure cleanly enough that a commercial investor, a DFI, and a government all trust the same number?" },
+        { "id": "s07-q2", "contrarian": false, "text": "When does concessional capital genuinely de-risk a deal, and when does it just subsidize a deal that had no business existing?" },
+        { "id": "s07-q3", "contrarian": false, "text": "For a fund putting commercial money into education and skilling, is blended finance a core strategy, an occasional tool, or a distraction? How would you compare these to straight equity deals?" },
+        { "id": "s07-c1", "contrarian": true, "text": "Given the distinct time horizons required for education and skilling initiatives, do standard equity investments create a structural mismatch? Might private debt serve as a better financing vehicle to align investor exit realities with the industry's actual timelines?" }
+      ]
+    },
+    {
+      "no": 8,
+      "id": "s08",
+      "title": "Keynote: Yesterday's Soft Skills Are Today's Hard Skills",
+      "questions": [
+        { "id": "s08-q1", "contrarian": false, "text": "Where is the hard proof, in wages, in hiring, that human skills are actually rising in value as AI advances? Where is that evidence strongest in Asia, and where is it thin?" },
+        { "id": "s08-q2", "contrarian": false, "text": "Large parts of Asia still have not cracked basic reading and math. How do we get them to also prioritise essential human skills?" },
+        { "id": "s08-q3", "contrarian": false, "text": "Is there a risk the soft-skills story lets systems off the hook, cheering adaptability while underinvesting in the deep technical mastery that still pays the bills?" },
+        { "id": "s08-q4", "contrarian": false, "text": "For the investors and founders here, is there a real business in teaching and certifying human skills, or is this a public-goods problem the market will never fund?" },
+        { "id": "s08-c1", "contrarian": true, "text": "AI is getting unnervingly good at communication, simulated empathy, even judgment-like reasoning. What if the soft skills we are betting the future on are automating faster than the technical ones we just wrote off?" },
+        { "id": "s08-c2", "contrarian": true, "text": "Soft skills mostly come from family, class, and social capital. Could putting them at the heart of hiring make the market less fair for poor Asian students, whose one real edge has always been measurable technical mastery?" }
+      ]
+    },
+    {
+      "no": 9,
+      "id": "s09",
+      "title": "How to raise AI-Native thinkers?",
+      "questions": [
+        { "id": "s09-q1", "contrarian": false, "text": "Should schools hold AI back to protect thinking, or push it everywhere to build fluency? Both camps claim they are acting in the child's interest. Who is right?" },
+        { "id": "s09-q2", "contrarian": false, "text": "The goal everyone states is agency, kids who steer the tool instead of surrendering to it. Which classroom or home habits actually build that, and which just build familiarity?" },
+        { "id": "s09-q3", "contrarian": false, "text": "The last wave of edtech optimized for engagement and gamification, arguably at the cost of real learning. How do we keep AI learning tools from making the same mistake at a bigger scale?" },
+        { "id": "s09-c1", "contrarian": true, "text": "Every generation panics that a new technology is rotting young minds, novels, television, calculators, the internet. What makes the AI worry different, or is this just the same moral panic with a bigger budget?" },
+        { "id": "s09-c2", "contrarian": true, "text": "Here is the uncomfortable version. The kids who lead in 2040 might be the ones who offloaded to AI earliest, the way the best engineers stopped doing arithmetic by hand. Is protecting thinking really protecting nostalgia?" }
+      ]
+    },
+    {
+      "no": 10,
+      "id": "s10",
+      "title": "How to build schools that parents trust?",
+      "questions": [
+        { "id": "s10-q1", "contrarian": false, "text": "The last 2 decades were all about improving access to education. What practical steps can we take to make this decade about improving the quality and relevance of education?" },
+        { "id": "s10-q2", "contrarian": false, "text": "What creative financing has actually worked to fund expansion without bending the mission, sale-and-leaseback, revenue-linked deals, minority growth capital?" },
+        { "id": "s10-q3", "contrarian": false, "text": "Does a premium education brand travel across ASEAN, or do you have to earn trust from zero in every single market?" },
+        { "id": "s10-q4", "contrarian": false, "text": "Tell us about a scaling decision you got wrong, an acquisition, a market, a growth target you should not have chased, and what it taught you about the quality trade-off." },
+        { "id": "s10-c1", "contrarian": true, "text": "Is quality at scale a contradiction the industry refuses to say out loud? McDonald's scales because it standardizes, but there is only one Stanford. Great schools work because they do not." },
+        { "id": "s10-c2", "contrarian": true, "text": "The fastest path to quality at scale may not be schools anymore. It is AI tutoring on top of cheap infrastructure. Are the operators here scaling a model that is about to get leapfrogged?" }
+      ]
+    }
+  ]
+}
