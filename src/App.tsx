@@ -69,7 +69,7 @@ export default function App() {
         </button>
 
         <div className="brand">
-          <img src="/kies-logo.svg" alt="KIES 2026 — Kaizenvest & INSEAD Education Symposium" />
+          <img src={`${import.meta.env.BASE_URL}kies-logo.svg`} alt="KIES 2026 — Kaizenvest & INSEAD Education Symposium" />
         </div>
         <div className="tagline">
           <strong>The Big Questions</strong>
@@ -77,7 +77,7 @@ export default function App() {
         </div>
         <div className="credit">
           <span>Presented by</span>
-          <img src="/kaizenvest.png" alt="Kaizenvest" />
+          <img src={`${import.meta.env.BASE_URL}kaizenvest.png`} alt="Kaizenvest" />
         </div>
         <div className="hint">Click an image to reveal its question · Zoom with + and − · When zoomed, drag to move</div>
 

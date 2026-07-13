@@ -27,7 +27,7 @@ export default function QuestionModal({ question, session, color, image, votes, 
         <button className="modal-close" onClick={onClose} aria-label="Close">
           ×
         </button>
-        <img className="modal-img" src={`/art/${image}`} alt="" />
+        <img className="modal-img" src={`${import.meta.env.BASE_URL}art/${image}`} alt="" />
         <div className="modal-eyebrow">
           Session {String(session.no).padStart(2, '0')} · {session.title}
         </div>

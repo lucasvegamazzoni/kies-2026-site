@@ -364,7 +364,7 @@ export default function Constellation({ counts, onSelect, onZoomChange }: Props)
                           <rect x={-hw} y={-hh} width={n.tw} height={n.th} rx={2} />
                         </clipPath>
                         <image
-                          href={`/art/${n.img}`}
+                          href={`${import.meta.env.BASE_URL}art/${n.img}`}
                           x={-hw}
                           y={-hh}
                           width={n.tw}
